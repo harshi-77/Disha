@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "disha-intelligent-mobility",
+    "kind": "folder"
+  },
+  "apps": [
+    {
+      "id": "app",
+      "name": "disha-intelligent-mobility",
+      "folder": ".",
+      "framework": "React",
+      "platform": "web",
+      "default": true
+    }
+  ]
+}

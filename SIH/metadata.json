@@ -1,0 +1,6 @@
+{
+  "name": "DISHA — Dynamic Intelligent System for Holistic Access",
+  "description": "Predict. Optimize. Adapt. — Towards Smarter, Greener Mobility. Next-generation navigation with traffic prediction, QPSO route optimization, and spillback simulation.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

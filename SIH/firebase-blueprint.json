@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User account profile for DISHA Intelligent Mobility",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth user ID" },
+        "email": { "type": "string", "format": "email", "description": "User email address" },
+        "displayName": { "type": "string", "maxLength": 100, "description": "Display name" },
+        "vehicleType": { "type": "string", "enum": ["car", "ev", "bike", "logistics"], "description": "Preferred vehicle type" },
+        "vehicleModel": { "type": "string", "maxLength": 100, "description": "Vehicle model name" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Last update timestamp" }
+      },
+      "required": ["uid", "email"]
+    },
+    "SavedRoute": {
+      "title": "SavedRoute",
+      "description": "Saved route calculation for commute planning",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner user ID" },
+        "origin": { "type": "string", "maxLength": 200, "description": "Origin location" },
+        "destination": { "type": "string", "maxLength": 200, "description": "Destination location" },
+        "routeId": { "type": "string", "enum": ["fastest", "balanced", "low-traffic"], "description": "Selected route algorithm" },
+        "durationMin": { "type": "number", "description": "Estimated duration in minutes" },
+        "distanceKm": { "type": "number", "description": "Total route distance in km" },
+        "savingsMin": { "type": "number", "description": "Time savings in minutes" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["userId", "origin", "destination", "routeId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "entities/UserProfile" },
+      "description": "Individual user profile record"
+    },
+    "/users/{userId}/savedRoutes/{routeId}": {
+      "schema": { "$ref": "entities/SavedRoute" },
+      "description": "User-saved route plans and commute telemetry"
+    }
+  }
+}

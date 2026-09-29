@@ -1,0 +1,61 @@
+import { TrafficPrediction } from '../types';
+
+export const MOCK_TRAFFIC_PREDICTION: TrafficPrediction = {
+  timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+  currentCongestionPercent: 42,
+  forecasts: [
+    {
+      minutesFromNow: 15,
+      congestionPercent: 51,
+      trend: 'increasing',
+      projectedSpeedKmh: 28,
+      riskIndex: 58,
+    },
+    {
+      minutesFromNow: 30,
+      congestionPercent: 63,
+      trend: 'increasing',
+      projectedSpeedKmh: 19,
+      riskIndex: 74,
+    },
+    {
+      minutesFromNow: 45,
+      congestionPercent: 68,
+      trend: 'increasing',
+      projectedSpeedKmh: 16,
+      riskIndex: 82,
+    },
+    {
+      minutesFromNow: 60,
+      congestionPercent: 70,
+      trend: 'increasing',
+      projectedSpeedKmh: 15,
+      riskIndex: 86,
+    },
+    {
+      minutesFromNow: 90,
+      congestionPercent: 59,
+      trend: 'decreasing',
+      projectedSpeedKmh: 24,
+      riskIndex: 65,
+    },
+  ],
+  hourlyForecast: [
+    { hour: '07:00', congestionPercent: 24, predictedVolumeVehicles: 620 },
+    { hour: '08:00', congestionPercent: 48, predictedVolumeVehicles: 1350 },
+    { hour: '09:00', congestionPercent: 74, predictedVolumeVehicles: 2180 },
+    { hour: '10:00', congestionPercent: 68, predictedVolumeVehicles: 1890 },
+    { hour: '11:00', congestionPercent: 46, predictedVolumeVehicles: 1120 },
+    { hour: '12:00', congestionPercent: 40, predictedVolumeVehicles: 980 },
+    { hour: '13:00', congestionPercent: 42, predictedVolumeVehicles: 1040 },
+    { hour: '14:00', congestionPercent: 45, predictedVolumeVehicles: 1150 },
+    { hour: '15:00', congestionPercent: 52, predictedVolumeVehicles: 1420 },
+    { hour: '16:00', congestionPercent: 63, predictedVolumeVehicles: 1790 },
+    { hour: '17:00', congestionPercent: 79, predictedVolumeVehicles: 2350 },
+    { hour: '18:00', congestionPercent: 88, predictedVolumeVehicles: 2620 },
+    { hour: '19:00', congestionPercent: 82, predictedVolumeVehicles: 2410 },
+    { hour: '20:00', congestionPercent: 60, predictedVolumeVehicles: 1640 },
+    { hour: '21:00', congestionPercent: 38, predictedVolumeVehicles: 950 },
+  ],
+  peakHourWarning: 'Upcoming evening traffic peak anticipated between 17:30 and 19:30. Spillback threshold exceeded on Central Arterials.',
+};

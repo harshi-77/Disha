@@ -1,0 +1,68 @@
+{
+  "screens": [],
+  "chatBoxes": [
+    {
+      "ownerUserId": "2bb53133-597d-4f31-a7f0-25ac0009855c",
+      "ownerDeviceId": "46c7ba9d-97a2-4b12-afc1-d7828e714763",
+      "ownerName": "harshith63633",
+      "id": "chat-muji3ich-1",
+      "title": "Chat",
+      "harness": "grok",
+      "position": {
+        "x": 601.7602789014686,
+        "y": 334.26313181715625
+      },
+      "size": {
+        "width": 380,
+        "height": 420
+      },
+      "messages": [],
+      "agentName": "Apollo",
+      "agentLayout": null,
+      "paidBy": "own-account"
+    }
+  ],
+  "stickies": [],
+  "analytics": [],
+  "experiments": [],
+  "terminals": [],
+  "closedTerminals": [
+    {
+      "id": "term-muji4b49-3",
+      "agentName": "Atlas",
+      "harness": "codex",
+      "title": "Terminal",
+      "cwd": "C:\\Users\\Admin\\Downloads\\Disha.1_Final\\disha-intelligent-mobility",
+      "workspaceId": "37093b33-7673-4c2e-949b-0ab83fd24c55",
+      "position": {
+        "x": 744,
+        "y": -482.8623996121983
+      },
+      "size": {
+        "width": 1400,
+        "height": 862.8297662803499
+      },
+      "session": {
+        "agent": "codex"
+      },
+      "permissionMode": "default",
+      "closedAt": 1790494385158
+    }
+  ],
+  "connections": [],
+  "busCanvasId": "bf3bbd37-9b5c-4ccf-8950-3888f4f3e256",
+  "workspaces": [
+    {
+      "id": "37093b33-7673-4c2e-949b-0ab83fd24c55",
+      "name": "disha-intelligent-mobility",
+      "color": "#6ea8fe"
+    }
+  ],
+  "workspaceBindings": {
+    "37093b33-7673-4c2e-949b-0ab83fd24c55": {
+      "root": "C:\\Users\\Admin\\Downloads\\Disha.1_Final\\disha-intelligent-mobility",
+      "allocation": "ready"
+    }
+  },
+  "primaryCheckoutId": "37093b33-7673-4c2e-949b-0ab83fd24c55"
+}
